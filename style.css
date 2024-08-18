@@ -38,6 +38,61 @@ nav{
     padding: 10px 20px;
 }
 
+/* Home */
+.home{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(95, 50, 27);
+
+}
+.home-heading{
+    padding: 150px 70px;
+    font-size: large;
+    /* font-family: ; */
+}
+.home-heading h1{
+    font-size: 45px;
+}
+h1 em{
+    font-size: 60px;
+    font-style:normal ;
+}
+.home-heading p{
+    padding: 5px 0px;
+}
+.home-heading button{
+    color: rgb(95, 50, 27);
+    border: 1px solid rgb(95, 50, 27);;
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.offer{
+    margin-top: -90px;
+    margin-left: -100px;
+}
+.offer img{
+    width: 400px;
+}
+.home-image{
+    width: 400p;
+}
+.home-image{
+    position: relative;
+    animation: move 1s both;
+}
+@keyframes move {
+    from{
+        right: 0px;
+    }
+    to{
+        right: 100px;
+    }
+    
+}
+
 
 
 /* media query for small screen 1000px */
@@ -53,7 +108,43 @@ nav{
     .ancor-tags a{
         padding: 10px 10px;
     }
+
+    /* Home */
+    .home-heading{
+        padding: 150px 50px;
+    }
+    .home-heading h1{
+        font-size: 35px;
+    }
+    h1 em{
+        font-size: 50px;
+    }
+    .home-heading button{
+        padding: 8px;
+        margin-top: 8px;
+    }
+    .offer{
+        margin-top: -70px;
+        margin-left: -70px;
+    }
+    .offer img{
+        width: 300px;
+    }
+    .home-image img{
+        width: 300px;
+    }
+    @keyframes move {
+        from{
+            right: 0px;
+        }
+        to{
+            right: 50px;
+        }
+        
+    }
 }
+
+
 
 
 /* tabs  780px*/
@@ -66,6 +157,46 @@ nav{
     .ancor-tags a{
         font-size: 2.7vh;
         padding: 5px;
+    }
+
+    /* home */
+    .home-heading{
+        padding: 150px 20px;
+    }
+    .home-heading h1{
+        font-size: 25px;
+    }
+    h1 em{
+        font-size: 40px;
+    }
+    .home-heading img{
+        width: 15px;
+        padding: 5px;
+    }
+    .home-heading p{
+        font-size: small;
+    }
+    .home-heading button{
+        padding: 5px;
+    }
+    .offer{
+        margin-top: -70px;
+        margin-left: -70px;
+    }
+    .offer img{
+        width: 300px;
+    }
+    .home-image img{
+        width: 300px;
+    }
+    @keyframes move {
+        from{
+            right: 0px;
+        }
+        to{
+            right: 5%;
+        }
+        
     }
 }
 
@@ -87,4 +218,43 @@ nav{
        
     }
 
+    /* home  */
+    .home-heading{
+        padding: 60px 20px;
+    }
+    .home-heading h1{
+        font-size: 3vh;
+    }
+    h1 em{
+        font-size: 4vh;
+    }
+    .home-heading img{
+        width: 10px;
+        padding: 2px 10px;
+        margin: 0px 0;
+        margin-bottom: 0;
+    }
+    .home-heading p{
+        font-size: 1.3vh;
+    }
+    .home-heading button{
+        padding: 2px;
+        margin-left: 5px;
+        font-size: 1.3vh;
+    }
+    .offer{
+        margin-top: -40px;
+    }
+    .offer img{
+        width: 140px;
+    }
+    @keyframes move {
+        from{
+            right: 0px;
+        }
+        to{
+            right: 5%;
+        }
+        
+    }
 }
