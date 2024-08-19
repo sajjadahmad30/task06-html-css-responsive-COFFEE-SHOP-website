@@ -224,6 +224,33 @@ h1 em{
     color: rgb(95, 50, 27);
 }
 
+/* footer  */
+footer{
+    background-image: linear-gradient(rgba(0,0,0,0.495),rgba(0,0,0,0.495)),url(./images/footer-img.jpeg);
+    background-size: cover;
+    display: flex;
+    margin-top: 170px;
+    padding-top: 80px;
+    justify-content: space-evenly;
+    color: #fff;
+
+}
+footer h4{
+    margin-bottom: 20px;
+}
+footer ul li{
+    padding-top: 5px ;
+    list-style-type: none;
+}
+footer a img{
+    width: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
 /* media query for small screen 1000px */
 @media(max-width:1000px){
     #logo img{
@@ -501,6 +528,19 @@ h1 em{
         color: rgb(95, 50, 27);
     }
 
+    /* footer  */
+    footer{
+        margin-top: 100px;
+        padding-top: 50px;
+    }
+    footer ul li{
+        font-size: small;
+    
+    }
+    footer a img{
+        width: 15px;
+        padding: 5px;
+    }
 
 }
 
@@ -765,6 +805,22 @@ h1 em{
     .beans-container p{
         font-size: 15px;
         color: rgb(95, 50, 27);
+    }
+
+    /* footer  */
+    footer{
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+    footer ul li{
+        font-size: 1.3vh;
+    }
+    footer h4{
+        font-size: 1.4vh;
+    }
+    footer img{
+        width: 10px;
+        padding: 2px;
     }
 
 }
