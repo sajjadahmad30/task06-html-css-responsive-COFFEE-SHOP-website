@@ -17,6 +17,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: red;
 }
 #logo img{
     width: 80px;
@@ -46,7 +50,7 @@ nav{
 
 }
 .home-heading{
-    padding: 150px 70px;
+    padding: 100px 70px;
     font-size: large;
     /* font-family: ; */
 }
@@ -74,10 +78,12 @@ h1 em{
     margin-left: -100px;
 }
 .offer img{
+    margin-top: 100px;
     width: 400px;
 }
-.home-image{
-    width: 400p;
+.home-image img{
+    margin-top: 80px;
+    width: 350px;
 }
 .home-image{
     position: relative;
@@ -90,7 +96,55 @@ h1 em{
     to{
         right: 100px;
     }
-    
+}
+
+/* coffee */
+#heading{
+    margin-left: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(95, 50, 27);
+}
+#heading:hover{
+    text-decoration: underline rgb(95, 50, 27);
+}
+.coffee-container{
+    width: 100%;
+    height: 40%;
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    margin-top:40px;
+}
+.coffee-container .coffee-cup{
+    width: 260px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    background:rgba(0,0,0,0.365) url(./images/coffee-backgound-img-small-div.jpeg);
+    background-blend-mode: overlay;
+    background-size: cover;
+    margin-top: 12px;
+    transition: transform 0.3s ease-in 0.2s;
+}
+.coffee-cup:hover{
+    transform: scale(1.1);
+}
+.coffee-cup img{
+    width: 150px;
+    height: 130px;
+    position: relative;
+    top: -40px;
+    border-radius: 50%;
+}
+.coffee-cup h2{
+    margin-top: -15px;
+}
+.coffee-cup p{
+    font-size: 13px;
+    padding: 5px;
 }
 
 
@@ -139,9 +193,48 @@ h1 em{
         }
         to{
             right: 50px;
-        }
-        
+        }  
     }
+
+
+    /* coffee */
+    .coffee-container{
+        display:grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+        margin-top:40px;
+    }
+    .coffee-container .coffee-cup{
+        width: 190px;
+        height: 190px;
+        margin: 0 auto;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        background-image:url(./images/coffee-backgound-img-small-div.jpeg);
+        background-size: cover;
+        margin-top: 12px;
+        transition: transform 0.3s ease-in 0.2s;
+    }
+    .coffee-cup:hover{
+        transform: scale(1.1);
+    }
+    .coffee-cup img{
+        width: 150px;
+        height: 130px;
+        position: relative;
+        top: -40px;
+        border-radius: 50%;
+    }
+    .coffee-cup h2{
+        margin-top: -25px;
+    }
+    .coffee-cup p{
+        font-size: 13px;
+        padding: 5px;
+    }
+    
+
 }
 
 
@@ -195,9 +288,99 @@ h1 em{
         }
         to{
             right: 5%;
-        }
-        
+        } 
     }
+
+     /* coffee */
+     .coffee-container{
+        display:grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: space-around;
+        margin-top:40px;
+    }
+    .coffee-container .coffee-cup{
+        width:170px;
+        height: 170px;
+        margin: 0 auto;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        background-image:url(./images/coffee-backgound-img-small-div.jpeg);
+        background-size: cover;
+        margin-top: 12px;
+        transition: transform 0.3s ease-in 0.2s;
+    }
+    .coffee-cup:hover{
+        transform: scale(1.1);
+    }
+    .coffee-cup img{
+        width: 120px;
+        height: 100px;
+        position: relative;
+        top: -40px;
+        border-radius: 50%;
+    }
+    .coffee-cup h2{
+        margin-top: -20px;
+        font-size: medium;
+    }
+    .coffee-cup p{
+        font-size: 1.7vh;
+        padding: 5px;
+    }
+}
+
+/* for coffe div 660px */
+
+@media (max-width:660px) {
+    .offer{
+        margin-top: -60px;
+        margin-left: -60px;
+    }
+    .offer img{
+        width: 200px;
+    }
+    .home-image img{
+        width: 200px;
+    }
+     /* coffee */
+     .coffee-container{
+        display:grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space-around;
+        margin-top:40px;
+    }
+    .coffee-container .coffee-cup{
+        width:130px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        background-image:url(./images/coffee-backgound-img-small-div.jpeg);
+        background-size: cover;
+        margin-top: 12px;
+        transition: transform 0.3s ease-in 0.2s;
+    }
+    .coffee-cup:hover{
+        transform: scale(1.1);
+    }
+    .coffee-cup img{
+        width: 110px;
+        height: 100px;
+        position: relative;
+        top: -40px;
+        border-radius: 50%;
+    }
+    .coffee-cup h2{
+        margin-top: -20px;
+        font-size: medium;
+    }
+    .coffee-cup p{
+        font-size: 1.7vh;
+        padding: 5px;
+    }
+    
 }
 
 
@@ -248,13 +431,57 @@ h1 em{
     .offer img{
         width: 140px;
     }
+    .home-image img{
+        width: 180px;
+    }
     @keyframes move {
         from{
             right: 0px;
         }
         to{
             right: 5%;
-        }
-        
+        }   
+    }
+
+     /* coffee */
+     #heading{
+        margin-top: 40px;
+     }
+     .coffee-container{
+        display:grid;
+        grid-template-columns: 95%;
+        margin-top:40px;
+
+       
+    }
+    .coffee-container .coffee-cup{
+        width:250px;
+        height: 220px;
+        margin: 0 auto;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        background-image:url(./images/coffee-backgound-img-small-div.jpeg);
+        background-size: cover;
+        margin-top: 12px;
+        transition: transform 0.3s ease-in 0.2s;
+    }
+    .coffee-cup:hover{
+        transform: scale(1.1);
+    }
+    .coffee-cup img{
+        width: 180px;
+        height: 150px;
+        position: relative;
+        top: -40px;
+        border-radius: 50%;
+    }
+    .coffee-cup h2{
+        margin-top: -15px;
+        font-size: medium;
+    }
+    .coffee-cup p{
+        font-size: 1.7vh;
+        padding: 5px;
     }
 }
