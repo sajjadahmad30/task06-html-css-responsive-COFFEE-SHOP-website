@@ -4,8 +4,7 @@
     font-family: sans-serif;
 }
 body{
-    /* background-image:url(./images/main-background-img.jpg) ; */
-    background-color: rgb(241, 206, 206);
+    background-image: linear-gradient(rgba(78, 70, 70, 0.495),rgba(254, 243, 243, 0.495)),url(./images/main-background-img.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -29,16 +28,29 @@ nav{
     border-radius: 50%;
 }
 .ancor-tags{
+    display: flex;
     margin-top: 20px;
     padding-right: 60px;
 }
-.ancor-tags a{
+.ancor-tags li{
+    list-style: none;
+    margin:12px;
+    background-color: #ffffff6b;
+    padding: 10px 20px;
+    border-radius: 11px;
+}
+.ancor-tags li a{
     color: rgb(95, 50, 27);
     text-decoration: none;
-    background-color: #ffffff6b;
     text-align: center;
-    border-radius: 11px;
-    padding: 10px 20px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in 0.2s;
+}
+.ancor-tags li:hover{
+    box-shadow: 1px 1px 1px  1px rgb(30, 28, 28);
+    background-color: #dddcdc;
+    transform: scale(1.1);
+
 }
 
 /* Home */
@@ -63,7 +75,7 @@ h1 em{
 .home-heading p{
     padding: 5px 0px;
 }
-.home-heading button{
+#btn{
     color: rgb(95, 50, 27);
     border: 1px solid rgb(95, 50, 27);;
     background-color: transparent;
@@ -71,10 +83,18 @@ h1 em{
     margin-left: 20%;
     margin-top: 15px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in 0.2s;
 }
+#btn:hover{
+    background-color: rgba(52, 28, 10, 0.714);
+    color: #fff;
+   transform: scale(1.1);
+}
+
 .offer{
-    margin-top: -90px;
-    margin-left: -100px;
+    margin-top: -30px;
+    margin-left: -10px;
 }
 .offer img{
     margin-top: 100px;
@@ -104,6 +124,8 @@ h1 em{
     font-weight: bold;
     text-align: center;
     color: rgb(95, 50, 27);
+    padding-bottom: 12px;
+    cursor: pointer;
 }
 #heading:hover{
     text-decoration: underline rgb(95, 50, 27);
@@ -116,7 +138,7 @@ h1 em{
     grid-template-columns: 30% 30% 30%;
     justify-content: space-around;
     margin-top:40px;
-    
+
 }
 .coffee-container .coffee-cup{
     width: 260px;
@@ -131,6 +153,7 @@ h1 em{
     box-shadow: 5px 5px 5px rgb(7, 7, 7);
     margin-top: 12px;
     transition: transform 0.3s ease-in 0.2s;
+    cursor: pointer;
 }
 
 .coffee-cup:hover{
@@ -149,6 +172,10 @@ h1 em{
 .coffee-cup p{
     font-size: 13px;
     padding: 5px;
+    cursor: pointer;
+}
+.coffee-cup p:hover{
+    text-decoration: underline #fff;
 }
 
 /* image-text */
@@ -193,6 +220,7 @@ h1 em{
     padding: 30px 0px;
     width: 120px;
     height: 150px;
+    cursor: pointer;
 }
 .cold-cofe-container .text-body{
     background-color: #fff;
@@ -201,6 +229,10 @@ h1 em{
 }
 .cold-cofe-container .text-body h4{
     font-size: 3vh;
+    cursor: pointer;
+}
+.cold-cofe-container .text-body h4:hover{
+    text-decoration: underline rgb(95, 50, 27);
 }
 
 /* beans container */
@@ -216,12 +248,17 @@ h1 em{
     border-radius: 10px;
     border: 1px solid rgba(77, 48,34,0.589);
     box-shadow: 2px 2px 10px 10px  rgba(77, 48,34,0.589);
+    cursor: pointer;
 }
 .beans-container img{
     width: 190px;
 }
 .beans-container p{
     color: rgb(95, 50, 27);
+}
+
+.beans-container p:hover{
+   text-decoration: underline rgb(95, 50, 27);
 }
 
 /* footer  */
@@ -241,14 +278,30 @@ footer h4{
 footer ul li{
     padding-top: 5px ;
     list-style-type: none;
+    cursor: pointer;
+}
+footer ul li:hover{
+    text-decoration: underline ;
 }
 footer a img{
     width: 40px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 50%;
     padding: 5px;
+    transition: transform 0.3s ease-in  0.2s;
+}
+footer a img:hover{
+    transform: scale(1.1);
+
 }
 
+.Copyrights{
+    background-color: black;
+    color: #fff;
+    font-size: x-large;
+    padding: 12px;
+    text-align: center;
+}
 
 
 /* media query for small screen 1000px */
@@ -280,8 +333,8 @@ footer a img{
         margin-top: 8px;
     }
     .offer{
-        margin-top: -70px;
-        margin-left: -70px;
+        margin-top: -10px;
+        margin-left: -10px;
     }
     .offer img{
         width: 300px;
@@ -295,7 +348,7 @@ footer a img{
         }
         to{
             right: 50px;
-        }  
+        }
     }
 
 
@@ -335,7 +388,7 @@ footer a img{
         font-size: 13px;
         padding: 5px;
     }
-    
+
     /* image-text */
     .image-text{
         padding: 40px 10px;
@@ -379,6 +432,14 @@ footer a img{
         color: rgb(95, 50, 27);
     }
 
+    .Copyrights{
+        background-color: black;
+        color: #fff;
+        font-size: large;
+        padding: 10px;
+        text-align: center;
+    }
+
 
 }
 
@@ -417,12 +478,9 @@ footer a img{
     .home-heading button{
         padding: 5px;
     }
-    .offer{
-        margin-top: -70px;
-        margin-left: -70px;
-    }
+    
     .offer img{
-        width: 300px;
+        width: 280px;
     }
     .home-image img{
         width: 300px;
@@ -433,7 +491,7 @@ footer a img{
         }
         to{
             right: 5%;
-        } 
+        }
     }
 
      /* coffee */
@@ -535,12 +593,20 @@ footer a img{
     }
     footer ul li{
         font-size: small;
-    
+
     }
     footer a img{
         width: 15px;
         padding: 5px;
     }
+    .Copyrights{
+        background-color: black;
+        color: #fff;
+        font-size: small;
+        padding: 7px;
+        text-align: center;
+    }
+
 
 }
 
@@ -548,11 +614,12 @@ footer a img{
 
 @media (max-width:660px) {
     .offer{
-        margin-top: -60px;
+        margin-top: -32px;
         margin-left: -60px;
     }
     .offer img{
         width: 200px;
+        margin-bottom: -120px;
     }
     .home-image img{
         width: 200px;
@@ -616,7 +683,7 @@ footer a img{
     .cold-cofe-container .text-body h4{
         font-size: 3vh;
     }
-    
+
 
 
      /* beans container */
@@ -657,7 +724,7 @@ footer a img{
     .ancor-tags a{
         padding: 5px 5px;
         font-size: 1.6vh;
-       
+
     }
 
     /* home  */
@@ -685,10 +752,10 @@ footer a img{
         font-size: 1.3vh;
     }
     .offer{
-        margin-top: -40px;
+        margin-top: 40px;
     }
     .offer img{
-        width: 140px;
+        width: 190px;
     }
     .home-image img{
         width: 180px;
@@ -699,7 +766,7 @@ footer a img{
         }
         to{
             right: 5%;
-        }   
+        }
     }
 
      /* coffee */
@@ -711,7 +778,7 @@ footer a img{
         grid-template-columns: 95%;
         margin-top:40px;
 
-       
+
     }
     .coffee-container .coffee-cup{
         width:250px;
@@ -821,6 +888,14 @@ footer a img{
     footer img{
         width: 10px;
         padding: 2px;
+    }
+
+    .Copyrights{
+        background-color: black;
+        color: #fff;
+        font-size: 10px;
+        padding: 7px;
+        text-align: center;
     }
 
 }
