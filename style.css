@@ -20,7 +20,6 @@ nav{
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: red;
 }
 #logo img{
     width: 80px;
@@ -126,6 +125,7 @@ h1 em{
     background:rgba(0,0,0,0.365) url(./images/coffee-backgound-img-small-div.jpeg);
     background-blend-mode: overlay;
     background-size: cover;
+    box-shadow: 5px 5px 5px rgb(7, 7, 7);
     margin-top: 12px;
     transition: transform 0.3s ease-in 0.2s;
 }
@@ -146,8 +146,6 @@ h1 em{
     font-size: 13px;
     padding: 5px;
 }
-
-
 
 /* media query for small screen 1000px */
 @media(max-width:1000px){
@@ -234,6 +232,7 @@ h1 em{
         padding: 5px;
     }
     
+   
 
 }
 
@@ -328,6 +327,9 @@ h1 em{
         font-size: 1.7vh;
         padding: 5px;
     }
+
+    
+    
 }
 
 /* for coffe div 660px */
@@ -484,4 +486,6 @@ h1 em{
         font-size: 1.7vh;
         padding: 5px;
     }
+
+    
 }
