@@ -26,18 +26,14 @@ nav{
     height:80px;
     margin-left: 40px;
     border-radius: 50%;
+    margin-top: 8px;
 }
 .ancor-tags{
     display: flex;
     margin-top: 20px;
     padding-right: 60px;
 }
-/* .ancor-tags a{
-    margin:32px;
-    background-color: #ffffff6b;
-    padding: 10px 20px;
-    border-radius: 11px;
-} */
+
 .ancor-tags a{
     background-color:#ffffff6b ;
     color: rgb(95, 50, 27);
@@ -66,7 +62,6 @@ nav{
 .home-heading{
     padding: 100px 70px;
     font-size: large;
-    /* font-family: ; */
 }
 .home-heading h1{
     font-size: 45px;
@@ -269,7 +264,6 @@ h1 em{
 
 /* footer  */
 footer{
-    /* background-image: linear-gradient(rgba(226, 66, 66, 0.495),rgba(203, 11, 11, 0.495)),url(./images/footer-img.jpeg); */
     background-color:#00000036;
     background-size: cover;
     display: flex;
@@ -305,9 +299,8 @@ footer a img:hover{
 
 .Copyrights{
     margin: 1px;
-    background-color: rgb(250, 250, 250);
-    box-shadow:inset 2px 2px 2px 2px gray;
-    color: #030000;
+    color: rgb(209, 206, 206);
+    background-color: #030000;
     font-size: x-large;
     padding: 12px;
     text-align: center;
@@ -680,14 +673,16 @@ footer a img:hover{
     .cold-cofe-container{
         display: grid;
         grid-template-columns: 45% 45%;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         margin-top: 50px;
-        gap: 50px;
+        gap: 30px;
+        margin-left: 15px;
     }
     .cold-cofe-container .cofe-cup{
         width: 180px;
         height: 250px;
+
     }
 
     .cold-cofe-container .text-body{
