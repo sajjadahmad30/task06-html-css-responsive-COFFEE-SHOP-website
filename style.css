@@ -270,7 +270,7 @@ h1 em{
 /* footer  */
 footer{
     /* background-image: linear-gradient(rgba(226, 66, 66, 0.495),rgba(203, 11, 11, 0.495)),url(./images/footer-img.jpeg); */
-    background-color: black;
+    background-color:#00000036;
     background-size: cover;
     display: flex;
     margin-top: 200px;
